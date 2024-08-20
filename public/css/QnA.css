@@ -1,0 +1,172 @@
+    .link-bread {
+        color: white;
+    }
+
+    .link-bread:hover {
+        color: rgb(34, 75, 158);
+        text-decoration: none;
+        transition: 0.6s;
+    }
+
+    .link-bread::after {
+        content: "";
+        display: block;
+        width: 0%;
+        height: 3px;
+        background-color: orange;
+        /* margin: 10px 0 20px; */
+    }
+
+    .link-bread:hover::after {
+        content: "";
+        display: block;
+        width: 100%;
+        /* height: 3px; */
+        background-color: orange;
+        /* margin: 10px 0 20px; */
+        transition: 0.6s;
+    }
+
+    article {
+        width: 65%;
+        margin: 1em auto;
+    }
+
+
+    textarea,
+    input[type="text"] {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        margin-bottom: 1em;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    fieldset {
+        border: 1px groove rgb(0, 0, 0) !important;
+        padding: 0 1.4em 1.4em 1.4em !important;
+        margin: 0 0 1.5em 0 !important;
+    }
+
+    .btn {
+        float: right;
+        clear: both;
+    }
+
+    .art_2 {
+        padding: 0 1% 0 1%;
+        margin: 4em auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+    .p_qna {
+        font-size: larger;
+        font-weight: bold;
+        margin: 2em auto 1em auto;
+    }
+
+    .question,
+    .question_detail {
+        color: #0047FF;
+    }
+
+    .span_answer::after {
+        content: "";
+        display: block;
+        width: 1.5vw;
+        height: 3px;
+        background-color: rgb(255, 60, 0);
+    }
+
+    .span_answer_detail {
+        margin: 1em auto;
+    }
+
+    .search {
+        padding-top: 2% !important;
+        padding-bottom: 2% !important;
+        width: 100% !important;
+    }
+
+    .form {
+        border: 1px solid !important;
+        border-radius: 1.5em !important;
+        display: block !important;
+        overflow: hidden !important;
+    }
+
+    svg {
+        padding-left: 0.5% !important;
+        margin-left: 0.5%;
+        margin-right: 0;
+        padding-right: 0;
+        display: unset !important;
+        float: inline-start;
+        clear: both;
+        z-index: 99999;
+    }
+
+    article form{
+        margin-bottom: 5vh;
+    }
+
+    input[placeholder="ค้นหาคำถาม"] {
+        border: none !important;
+        outline: none !important;
+        width: 50vw !important;
+        height: 3rem !important;
+        padding-left: 0%;
+    }
+
+    input[class='my-2'] {
+        margin: 0% !important;
+    }
+
+    .h3_2{
+        width: fit-content;
+        border-bottom: 3px solid orange;
+    }
+
+    h3 {
+        font-size: 2rem !important;
+        margin-bottom: 1% !important;
+    }
+
+    a:focus,
+    button:focus,
+    input:focus,
+    textarea:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border-color: black !important;
+    }
+    *{
+        font-family: SF Thonburi !important;
+    }
+
+    .answer{
+        position: relative;
+        height: 5rem;
+        padding-bottom: 0.5%;
+    }
+
+    
+    .answer::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: steelblue;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+        transform: scaleX(0);
+    }
+    
+    .answer:hover::after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }

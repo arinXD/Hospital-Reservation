@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif !important;
+    /* font-size: 1.2em; */
+}
+
+.register-container{
+    /* padding: 3em 0em; */
+    background: no-repeat url(https://img.freepik.com/free-photo/blur-hospital_1203-7972.jpg?w=740&t=st=1663995046~exp=1663995646~hmac=e618562059cb1e2effc743adf757c4e225a73438cd52cb6fd39f0aa975b1f48b);
+    background-size: cover;
+    background-position: 50% 50%;
+    height: fit-content
+}
+#title{
+    font-size: 2em;
+}
+#subtitle{
+    font-size: 1.5em;
+}
+.py-0{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
